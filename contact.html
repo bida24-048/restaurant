@@ -24,4 +24,108 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:maganolizzy79@gmail.com">maganolizzy79@gmail.com</a>.</p>
+        
+        <!-- Customer Assistance Form -->
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+                <label for="assistance" class="form-label">How can we assist you?</label>
+                <select class="form-select" id="assistance" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="order">Order</option>
+                    <option value="reserve">Reserve a Table</option>
+                </select>
+            </div>
+            <!-- Dynamic Options -->
+            <div id="dynamic-options" class="mb-3" style="display: none;">
+                <!-- Content dynamically generated via JavaScript -->
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 Lizzy Magano</p>
+    </footer>
+
+    <script>
+        const assistanceSelect = document.getElementById('assistance');
+        const dynamicOptions = document.getElementById('dynamic-options');
+
+        assistanceSelect.addEventListener('change', () => {
+            const selectedOption = assistanceSelect.value;
+
+            // Clear dynamic options
+            dynamicOptions.innerHTML = '';
+
+            if (selectedOption === 'order') {
+                dynamicOptions.style.display = 'block';
+                dynamicOptions.innerHTML = `
+                    <label for="dishes" class="form-label">Select a Dish</label>
+                    <select class="form-select" id="dishes" required>
+                        <option value="" disabled selected>Select a dish</option>
+                        <option value="steak">Grilled Steak</option>
+                        <option value="pasta">Chicken Alfredo Pasta</option>
+                        <option value="burger">Cheeseburger</option>
+                        <option value="salad">Caesar Salad</option>
+                        <option value="brownies">Brownies</option>
+                        <option value="cake">Cheesecake</option>
+                        <option value="chocolate">Chocolate mousse</option>
+                        <option value="beef stroganoff">Beef stroganoff</option>
+                        <option value="bbq">BBQ Ribs</option>
+                        <option value="pie">Apple pie</option>
+                        <option value="chips">Fish and Chips</option>
+                        <option value="chicken">Grilled chicken salad</option>
+                        <option value="pizza">Margherita pizza</option>
+                        <option value="spaghetti">Spaghetti bolognese</option>
+                        <option value="pancakes">Pancakes</option>
+                        <option value="tiramisu">Tiramisu</option>
+                    </select>
+                `;
+            } else if (selectedOption === 'reserve') {
+                dynamicOptions.style.display = 'block';
+                dynamicOptions.innerHTML = `
+                    <label for="tables" class="form-label">Select a Table</label>
+                    <select class="form-select" id="tables" required>
+                        <option value="" disabled selected>Select a table number</option>
+                        <option value="table1">Table 1</option>
+                        <option value="table2">Table 2</option>
+                        <option value="table3">Table 3</option>
+                        <option value="table4">Table 4</option>
+                        <option value="table5">Table 5</option>
+                    </select>
+                `;
+            } else {
+                dynamicOptions.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+              
