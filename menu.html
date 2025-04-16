@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    
+</head>
+<body>
+    <header>
+        
+            <h1>Restaurant Name</h1>
+            <nav>
+                
+                   <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="contact.html">Contact</a>
+                
+            </nav>
+        
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="menu" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-bold text-gray-800">Grilled Chicken Salad</h3>
+                    <p class="text-gray-600">Fresh greens with grilled chicken, tomatoes, and a balsamic vinaigrette.</p>
+                    <p class="text-lg font-semibold text-gray-800 mt-2">$12.99</p>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-bold text-gray-800">Classic Cheeseburger</h3>
+                    <p class="text-gray-600">Juicy beef patty with cheddar cheese, lettuce, and tomato on a toasted bun.</p>
+                    <p class="text-lg font-semibold text-gray-800 mt-2">$10.99</p>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-bold text-gray-800">Margherita Pizza</h3>
+                    <p class="text-gray-600">Classic pizza with fresh mozzarella, tomatoes, and basil.</p>
+                    <p class="text-lg font-semibold text-gray-800 mt-2">$14.99</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+
+        <section id="about" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+            <p class="text-gray-600">We are passionate about serving delicious meals made from fresh, high-quality ingredients. Come dine with us and experience the best of culinary artistry.</p>
+        </section>
+
+        <section id="contact" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+            <form class="bg-white p-4 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-md p-2" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+            <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>

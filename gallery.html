@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gallery</title>
+    
+</head>
+<body>
+    <header>
+        
+            <h1>Restaurant Name</h1>
+            <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="feedback.html"Feedback</a>
+                    <a href="contact.html">Contact</a>
+                
+            </nav>
+        
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="gallery" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Gallery Item -->
+                <div class="relative group">
+                    <img src="https://via.placeholder.com/300" alt="Dish 1" class="w-full h-48 object-cover rounded-lg shadow-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Dish Name 1</p>
+                    </div>
+                </div>
+                <!-- Gallery Item -->
+                <div class="relative group">
+                    <img src="https://via.placeholder.com/300" alt="Dish 2" class="w-full h-48 object-cover rounded-lg shadow-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Dish Name 2</p>
+                    </div>
+                </div>
+                <!-- Gallery Item -->
+                <div class="relative group">
+                    <img src="https://via.placeholder.com/300" alt="Dish 3" class="w-full h-48 object-cover rounded-lg shadow-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Dish Name 3</p>
+                    </div>
+                </div>
+                <!-- Gallery Item -->
+                <div class="relative group">
+                    <img src="https://via.placeholder.com/300" alt="Dish 4" class="w-full h-48 object-cover rounded-lg shadow-md">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="text-white font-bold">Dish Name 4</p>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </section>
+
+        <section id="about" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+            <p class="text-gray-600">We take pride in offering visually stunning dishes and a welcoming atmosphere. Explore our gallery to see what awaits you!</p>
+        </section>
+
+        <section id="contact" class="my-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+            <form class="bg-white p-4 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-md p-2" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+            <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>
