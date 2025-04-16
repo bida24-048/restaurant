@@ -57,67 +57,98 @@
     
 
     <main class="container mx-auto p-4">
-        <section id="gallery" class="my-8">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Gallery</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Gallery Item -->
-                <div class="relative group">
-                    <img src="https://via.placeholder.com/300" alt="Dish 1" class="w-full h-48 object-cover rounded-lg shadow-md">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white font-bold">Dish Name 1</p>
+        <section id="gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-3xl font-semibold text-gray-800 text-center mb-4">Western Dishes Gallery</h2>
+        <div class="row g-4">
+            <!-- Existing Dishes -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/grilled-chicken-salad.jpg" class="card-img-top" alt="Grilled Chicken Salad">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Grilled Chicken Salad</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Chicken breast, mixed greens, cherry tomatoes, cucumber, balsamic vinaigrette.</p>
                     </div>
                 </div>
-                <!-- Gallery Item -->
-                <div class="relative group">
-                    <img src="https://via.placeholder.com/300" alt="Dish 2" class="w-full h-48 object-cover rounded-lg shadow-md">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white font-bold">Dish Name 2</p>
-                    </div>
-                </div>
-                <!-- Gallery Item -->
-                <div class="relative group">
-                    <img src="https://via.placeholder.com/300" alt="Dish 3" class="w-full h-48 object-cover rounded-lg shadow-md">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white font-bold">Dish Name 3</p>
-                    </div>
-                </div>
-                <!-- Gallery Item -->
-                <div class="relative group">
-                    <img src="https://via.placeholder.com/300" alt="Dish 4" class="w-full h-48 object-cover rounded-lg shadow-md">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p class="text-white font-bold">Dish Name 4</p>
-                    </div>
-                </div>
-                <!-- Add more gallery items as needed -->
             </div>
-        </section>
-
-        <section id="about" class="my-8">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
-            <p class="text-gray-600">We take pride in offering visually stunning dishes and a welcoming atmosphere. Explore our gallery to see what awaits you!</p>
-        </section>
-
-        <section id="contact" class="my-8">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
-            <form class="bg-white p-4 rounded-lg shadow-md">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 font-medium">Name</label>
-                    <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-md p-2" required>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/classic-cheeseburger.jpg" class="card-img-top" alt="Classic Cheeseburger">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Classic Cheeseburger</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Beef patty, cheddar cheese, lettuce, tomato, pickles, sesame bun.</p>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 font-medium">Email</label>
-                    <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-md p-2" required>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/margherita-pizza.jpg" class="card-img-top" alt="Margherita Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Margherita Pizza</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Fresh mozzarella, tomatoes, basil, olive oil, pizza dough.</p>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 font-medium">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-md p-2" required></textarea>
+            </div>
+            <!-- New Dishes -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/fish-and-chips.jpg" class="card-img-top" alt="Fish and Chips">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fish and Chips</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: White fish fillets, potatoes, flour, eggs, breadcrumbs, tartar sauce.</p>
+                    </div>
                 </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send</button>
-            </form>
-        </section>
-    </main>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/steak.jpg" class="card-img-top" alt="Grilled Steak">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Grilled Steak</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Beef steak, garlic, rosemary, olive oil, salt, pepper.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/spaghetti-bolognese.jpg" class="card-img-top" alt="Spaghetti Bolognese">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Spaghetti Bolognese</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Spaghetti, ground beef, tomato sauce, onions, garlic, parmesan cheese.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/caesar-salad.jpg" class="card-img-top" alt="Caesar Salad">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Caesar Salad</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Romaine lettuce, croutons, parmesan, Caesar dressing, anchovies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/chocolate-mousse.jpg" class="card-img-top" alt="Chocolate Mousse">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chocolate Mousse</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Dark chocolate, heavy cream, eggs, sugar, vanilla extract.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="images/pancakes.jpg" class="card-img-top" alt="Pancakes">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pancakes</h5>
+                        <p class="text-gray-600 text-sm text-center">Ingredients: Flour, eggs, milk, butter, maple syrup, baking powder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <footer>
+<footer>
         
             <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
         
