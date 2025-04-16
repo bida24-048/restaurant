@@ -7,212 +7,46 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-        <!-- Your content goes here -->
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="gallery.html">Gallery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                  <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="gallery.html">Gallery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-
-    
+        </nav>
+    </header>
 
     <main class="container mx-auto p-4">
-        <h1>Meals</h1>
-        <section id="gallery" class="py-5">
-    <div class="container">
-        <h2 class="text-3xl font-semibold text-gray-800 text-center mb-4">Western Dishes Gallery</h2>
-        <div class="row g-4">
-            <!-- Existing Dishes -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="grilled chicken.jpg" class="card-img-top" alt="Grilled Chicken Salad">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Grilled Chicken Salad</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Chicken breast, mixed greens, cherry tomatoes, cucumber, balsamic vinaigrette.</p>
+        <!-- Main Meals Gallery -->
+        <section id="main-gallery" class="py-5">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-4">Main Meals Gallery</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="grilled-chicken.jpg" class="card-img-top" alt="Grilled Chicken Salad">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Grilled Chicken Salad</h5>
+                            <p class="text-gray-600 text-sm text-center">Ingredients: Chicken breast, mixed greens, cherry tomatoes, cucumber, balsamic vinaigrette.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="cheeseburger.jpg" class="card-img-top" alt="Classic Cheeseburger">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Classic Cheeseburger</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Beef patty, cheddar cheese, lettuce, tomato, pickles, sesame bun.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="margherita pizza.jpg" class="card-img-top" alt="Margherita Pizza">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Margherita Pizza</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Fresh mozzarella, tomatoes, basil, olive oil, pizza dough.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="fish and chips.jpg" class="card-img-top" alt="Fish and Chips">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Fish and Chips</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: White fish fillets, potatoes, flour, eggs, breadcrumbs, tartar sauce.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="steak.jpg" class="card-img-top" alt="Grilled Steak">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Grilled Steak</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Beef steak, garlic, rosemary, olive oil, salt, pepper.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="spaghetti bolognese.jpg" class="card-img-top" alt="Spaghetti Bolognese">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Spaghetti Bolognese</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Spaghetti, ground beef, tomato sauce, onions, garlic, parmesan cheese.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="caesar salad.jpg" class="card-img-top" alt="Caesar Salad">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Caesar Salad</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Romaine lettuce, croutons, parmesan, Caesar dressing, anchovies.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="pancakes.jpg" class="card-img-top" alt="Pancakes">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Pancakes</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Flour, eggs, milk, butter, maple syrup, baking powder.</p>
-                    </div>
-                    <h1>DESSERTS</h1>
-                    <section id="desserts-gallery" class="py-5">
-    <div class="container">
-        <h2 class="text-3xl font-semibold text-gray-800 text-center mb-4">Dessert Dishes Gallery</h2>
-        <div class="row g-4">
-            <!-- Gallery Item 1 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="chocolate mousse.jpg" class="card-img-top" alt="Chocolate Mousse">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Chocolate Mousse</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Dark chocolate, heavy cream, eggs, sugar, vanilla extract.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery Item 2 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="apple pie.jpg" class="card-img-top" alt="Apple Pie">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Apple Pie</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Apples, cinnamon, nutmeg, sugar, pie crust, butter.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery Item 3 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="pancakes.jpg" class="card-img-top" alt="Pancakes">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Pancakes</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Flour, eggs, milk, butter, maple syrup, baking powder.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery Item 4 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="cheesecake.jpg" class="card-img-top" alt="Cheesecake">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Cheesecake</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Cream cheese, graham crackers, sugar, vanilla extract, eggs.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery Item 5 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="tiramisu.jpg" class="card-img-top" alt="Tiramisu">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Tiramisu</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Ladyfingers, mascarpone, coffee, cocoa powder, sugar.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery Item 6 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="card">
-                    <img src="brownies.jpg" class="card-img-top" alt="Brownies">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Brownies</h5>
-                        <p class="text-gray-600 text-sm text-center">Ingredients: Cocoa powder, flour, butter, sugar, eggs, vanilla extract.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-        
-            <p>&copy; 2025 GLM Resturant. All rights reserved.</p>
-        
-    </footer>
-</body>
-</html>
+                <!-- Add more main meals here -->
