@@ -68,6 +68,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
         </form>
+        <div id="submissionMessage" class="alert alert-success mt-4" style="display: none;">
+    Your request has been submitted successfully!
+</div>
+
     </main>
 
     <footer class="text-center py-3 bg-dark text-white">
@@ -124,8 +128,18 @@
             } else {
                 dynamicOptions.style.display = 'none';
             }
-        });
-    </script>
+            contactForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        // Show the success message
+        submissionMessage.style.display = 'block';
+
+        // Optionally, clear the form
+        contactForm.reset();
+        dynamicOptions.style.display = 'none';
+    });
+</script>
+        
 </body>
 </html>
               
