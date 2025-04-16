@@ -29,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,7 +41,7 @@
         <p>If you'd like to get in touch, feel free to email me at <a href="mailto:maganolizzy79@gmail.com">maganolizzy79@gmail.com</a>.</p>
         
         <!-- Customer Assistance Form -->
-        <form>
+        <form id="contactForm">
             <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
@@ -62,7 +62,14 @@
                     <option value="reserve">Reserve a Table</option>
                 </select>
             </div>
-
+            <!-- Dynamic Options -->
+            <div id="dynamic-options" class="mb-3" style="display: none;"></div>
+            
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div id="submissionMessage" class="alert alert-success mt-4" style="display: none;">
+            Your request has been submitted successfully!
+        </div>
     </main>
 
     <footer class="text-center py-3 bg-dark text-white">
@@ -72,6 +79,8 @@
     <script>
         const assistanceSelect = document.getElementById('assistance');
         const dynamicOptions = document.getElementById('dynamic-options');
+        const contactForm = document.getElementById('contactForm');
+        const submissionMessage = document.getElementById('submissionMessage');
 
         assistanceSelect.addEventListener('change', () => {
             const selectedOption = assistanceSelect.value;
@@ -91,16 +100,9 @@
                         <option value="salad">Caesar Salad</option>
                         <option value="brownies">Brownies</option>
                         <option value="cake">Cheesecake</option>
-                        <option value="chocolate">Chocolate mousse</option>
-                        <option value="beef stroganoff">Beef stroganoff</option>
+                        <option value="chocolate">Chocolate Mousse</option>
                         <option value="bbq">BBQ Ribs</option>
-                        <option value="pie">Apple pie</option>
-                        <option value="chips">Fish and Chips</option>
-                        <option value="chicken">Grilled chicken salad</option>
-                        <option value="pizza">Margherita pizza</option>
-                        <option value="spaghetti">Spaghetti bolognese</option>
-                        <option value="pancakes">Pancakes</option>
-                        <option value="tiramisu">Tiramisu</option>
+                        <option value="pie">Apple Pie</option>
                     </select>
                 `;
             } else if (selectedOption === 'reserve') {
@@ -119,20 +121,18 @@
             } else {
                 dynamicOptions.style.display = 'none';
             }
-            
-          
-            <!-- Dynamic Options -->
-            <div id="dynamic-options" class="mb-3" style="display: none;">
-                <!-- Content dynamically generated via JavaScript -->
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-        <div id="submissionMessage" class="alert alert-success mt-4" style="display: none;">
-    Your request has been submitted successfully!
-</div>  
-    });
-</script>
-        
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submissionMessage.style.display = 'block';
+            contactForm.reset();
+            dynamicOptions.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
-              
+
+
+   
+          
