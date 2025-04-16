@@ -20,9 +20,23 @@
   </fieldset>
   
   <div>
+    <label for="rating">Rate Us:</label><br>
+    <select id="rating" name="rating" required>
+      <option value="" disabled selected>Select a rating</option>
+      <option value="1">1 - Poor</option>
+      <option value="2">2 - Fair</option>
+      <option value="3">3 - Good</option>
+      <option value="4">4 - Very Good</option>
+      <option value="5">5 - Excellent</option>
+    </select><br><br>
+  </div>
+
+  <div>
     <label for="feedback">Your Feedback:</label><br>
     <textarea id="feedback" name="feedback" placeholder="Write your feedback here..." rows="5" cols="40" required></textarea><br><br>
   </div>
 
   <input type="submit" value="Submit">
 </form>
+
+ 
